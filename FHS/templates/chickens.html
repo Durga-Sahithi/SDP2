@@ -1,0 +1,54 @@
+{% extends 'navbar.html' %}
+#for images
+{% load static %}
+<!--<img class="card-img-top" src="{% static 'images/i1.jpg' %}" height="700" >-->
+<html>
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <br>
+    <div class="row">
+  <div class="col-sm-4">
+      <div class="card">
+          <img class="card-img-top" src="{% static 'images/chibir.jpg' %}" alt="Card image cap" height="310" >
+          <div class="card-body">
+              <h5 class="card-title">Chicken Biryani</h5>
+             <p class="card-text"><small class="text-muted">Rs. 230</small></p>
+              <center><button type="button" class="btn btn-primary">Add to Cart</button></center>
+          </div>
+      </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+        <img class="card-img-top" src="{% static 'images/fishbir.jpg' %}" alt="Card image cap" height="310" >
+        <div class="card-body">
+            <h5 class="card-title">Boneless Fish Biryani</h5>
+            <p class="card-text"><small class="text-muted">Rs. 350</small></p>
+            <center><button type="button" class="btn btn-primary">Add to Cart</button></center>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-4">
+    <div class="card">
+        <img class="card-img-top" src="{% static 'images/eggbir.jpg' %}" alt="Card image cap" height="310" >
+        <div class="card-body">
+            <h5 class="card-title">Egg Biryani</h5>
+            <p class="card-text"><small class="text-muted">Rs. 390</small></p>
+
+           <center><button type="button" class="btn btn-primary">Add to Cart</button></center>
+
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}

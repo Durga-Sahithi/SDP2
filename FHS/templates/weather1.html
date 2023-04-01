@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+
+</head>
+{% block body %}
+<div class="col-md-5">
+    {% csrf_token %}
+  <form action = "{% url 'weather1' %}" method="post">
+  {% csrf_token %}
+        <div class="form-group" align="center">
+            <h1>To get the temperature</h1>
+            <label>Enter the Name of city :</label>
+            <input type="text" class="form-control" id = 'cname' placeholder="Enter Name" name="cname">
+        <br>
+
+            <br>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+
+    </form>
+</div>
+{% endblock %}
+</html>

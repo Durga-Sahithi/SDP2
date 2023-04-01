@@ -1,0 +1,30 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block body %}
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+      <h1>Feedback</h1>
+<!--      <img src="/static/feed.jpg" class="rounded float-right" alt="...">-->
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+<form method="post" action="{% url 'feedback' %}">
+	{% csrf_token %}
+  <br/>
+  <br/>
+
+	<textarea name="message" placeholder="Message..."></textarea>
+  <br/>
+
+	<input type="submit" />
+  </form>
+      </div>
+</body>
+{% endblock %}
+
+</html>
